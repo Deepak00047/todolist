@@ -1,0 +1,132 @@
+/* General App Container */
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f4f8fb;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+ 
+/* App Title */
+h1 {
+  color: #34495e;
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+ 
+/* Form Container */
+.form-container {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+  width: 100%;
+  max-width: 600px;
+  align-items: center;
+}
+ 
+input, select {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+ 
+input:focus, select:focus {
+  border-color: #3498db;
+}
+ 
+/* Add Task Button */
+button {
+  padding: 12px 20px;
+  background-color: #3498db;
+  color: #ffffff;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+ 
+button:hover {
+  background-color: #2980b9;
+  transform: scale(1.05);
+}
+ 
+button:active {
+  background-color: #1c598a;
+}
+ 
+/* Tasks Container */
+.tasks-container {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  width: 100%;
+}
+ 
+/* Task Card */
+.task-card {
+  width: 300px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  text-align: left;
+  transition: transform 0.2s ease;
+}
+ 
+.task-card:hover {
+  transform: scale(1.05);
+}
+ 
+.task-card h3 {
+  margin: 0 0 10px;
+}
+ 
+.task-card p {
+  margin: 0 0 15px;
+}
+ 
+/* Priority Colors */
+.task-card.high {
+  border-left: 5px solid #e74c3c;
+}
+ 
+.task-card.medium {
+  border-left: 5px solid #f1c40f;
+}
+ 
+.task-card.low {
+  border-left: 5px solid #2ecc71;
+}
+ 
+/* Completed Task */
+.task-card.completed {
+  background-color: #d5f5e3;
+  text-decoration: line-through;
+  color: #555;
+}
+ 
+/* Task Actions */
+.task-actions {
+  display: flex;
+  justify-content: space-between;
+}
+ 
+button.remove-btn {
+  background-color: #e74c3c;
+}
+ 
+button.remove-btn:hover {
+  background-color: #c0392b;
+}
+
